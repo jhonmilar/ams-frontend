@@ -9,6 +9,9 @@ Router.map(function() {
   this.resource('messages', { path: "/" }, function() {
     this.route("new", { path: "/new" });
   });
+  this.route('vacations', {path: '/vacations'}, function() {
+    this.route('new');
+  });
 });
 
 export default Router;
